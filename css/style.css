@@ -41,7 +41,7 @@ main {
 }
 
 .container > .row {
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .container .card {
