@@ -1,0 +1,92 @@
+/* -------------------------------- GENERAL -------------------------------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* -------------------------------- HEADER -------------------------------- */
+
+header {
+  background-image: url("../img/wall.png");
+  background-size: cover;
+
+  font-family: "Varela Round", sans-serif;
+  font-style: oblique;
+  font-weight: bolder;
+
+  text-align: center;
+}
+
+header > h1 {
+  margin-bottom: 0;
+
+  padding: 1.5rem 0;
+  font-size: 3.5rem;
+}
+
+/* -------------------------------- MAIN -------------------------------- */
+
+main {
+  font-family: "Caveat", cursive;
+
+  background-image: url(../img/cork.png);
+  background-size: contain;
+}
+
+.container {
+  padding: 3rem;
+}
+
+.container > .row {
+  justify-content: space-around;
+}
+
+.container .card {
+  border-radius: 0px;
+  position: relative;
+
+  margin-bottom: 1rem;
+
+  box-shadow: 1px 1px 5px gray;
+}
+
+.card img {
+  margin: 1rem;
+}
+
+.card p {
+  margin: 0 1rem;
+  margin-bottom: 1rem;
+}
+
+.circle {
+  height: 25px;
+  width: 25px;
+  padding: 0;
+
+  position: absolute;
+  top: -12.5px;
+  right: calc(50% - 12.5px);
+}
+
+.circle img {
+  margin: 0;
+}
+
+/* responsive design */
+
+@media screen and (min-width: 960px) {
+  /* header */
+  header {
+    text-align: center;
+    background-image: url("../img/wall.png");
+    background-size: auto;
+
+    /* debug */
+  }
+  /* main */
+  .card {
+    margin: 1rem 1rem;
+  }
+}
