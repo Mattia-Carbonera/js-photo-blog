@@ -32,6 +32,8 @@ main {
 
   background-image: url(../img/cork.png);
   background-size: contain;
+
+  min-height: 100vh;
 }
 
 .container {
@@ -49,6 +51,8 @@ main {
   margin-bottom: 1rem;
 
   box-shadow: 1px 1px 5px gray;
+
+  min-height: 290px;
 }
 
 .card img {
