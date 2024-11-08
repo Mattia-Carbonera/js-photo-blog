@@ -45,7 +45,7 @@ const fetchCard = async () => {
       for (let i = 0; i < CardEl.length; i++) {
         image[i].addEventListener("click", function (e) {
           layoverContainer.classList.remove("d-none");
-          console.log(this.src);
+
           layoverImageContainer.innerHTML = `<img src="${this.src}" alt="" />`;
         });
       }

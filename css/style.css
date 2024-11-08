@@ -35,7 +35,7 @@ main {
   background-image: url(../img/cork.png);
   background-size: contain;
 
-  min-height: 100vh;
+  min-height: 100%;
 }
 
 .container {
@@ -113,8 +113,8 @@ main {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-.layover-image img {
-  max-width: 80%;
+.layover img {
+  max-width: 90vw;
 }
 
 /* responsive design */
@@ -130,5 +130,9 @@ main {
   }
   .card {
     margin: 1rem 1rem;
+  }
+  .layover {
+    height: 100%;
+    width: 100%;
   }
 }
