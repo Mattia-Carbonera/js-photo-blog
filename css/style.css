@@ -55,8 +55,6 @@ main {
 
   margin-bottom: 1rem;
   min-height: 290px;
-
-  cursor: pointer;
 }
 
 .card:hover {
@@ -73,6 +71,8 @@ main {
 
 .card img {
   margin: 1rem;
+
+  cursor: pointer;
 }
 
 .card p {
