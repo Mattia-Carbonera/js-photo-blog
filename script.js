@@ -27,30 +27,31 @@ const fetchCard = async () => {
 
         //   stampo in HTML
         cardContainer.innerHTML += `<div class="card col-md-5 col-lg-3" id="card-id">
-                <img src="${currentPhoto}" alt="Photo" />
+                <img src="${currentPhoto}" alt="Photo" class="image-card" />
                 <p>${upperCaseTitol}</p>
                 <div class="circle">
-                  <img src="./img/pin.svg" alt="" class="image-card"/>
+                  <img src="./img/pin.svg" alt="" />
                 </div>
               </div>`;
       }
 
       // gestisco il layover
       const layoverContainer = document.getElementById("layover");
+      const layoverImageContainer = document.getElementById("layover-image");
       const CardEl = document.querySelectorAll(".card");
-      const ButtonLayover = document.getElementById("layover-button-close");
       const image = document.querySelectorAll(".image-card");
-      const imageLayover = document.getElementById("image-layover");
 
       // aggiungo addEventListener e immagini
       for (let i = 0; i < CardEl.length; i++) {
-        CardEl[i].addEventListener("click", function (e) {
+        image[i].addEventListener("click", function (e) {
           layoverContainer.classList.remove("d-none");
-          console.log(this.CardEl);
+          console.log(this.src);
+          layoverImageContainer.innerHTML = `<img src="${this.src}" alt="" />`;
         });
       }
 
-      ButtonLayover.addEventListener("click", function () {
+      const buttonLayover = document.getElementById("layover-button-close");
+      buttonLayover.addEventListener("click", function () {
         layoverContainer.classList.add("d-none");
       });
     })
