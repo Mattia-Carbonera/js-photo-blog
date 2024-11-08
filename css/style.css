@@ -61,6 +61,18 @@ main {
   cursor: pointer;
 }
 
+.card:hover {
+  transform: scale(1.2) rotate(10deg);
+  z-index: 1;
+  box-shadow: 1px 1px 20px black;
+
+  transition: all 70ms;
+}
+
+.card:hover .circle {
+  display: none;
+}
+
 .card img {
   margin: 1rem;
 }
@@ -87,6 +99,8 @@ main {
 /* -------------------------------- LAYOVER -------------------------------- */
 
 .layover {
+  z-index: 2;
+
   position: absolute;
   top: 0;
   left: 0;
