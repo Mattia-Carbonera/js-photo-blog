@@ -30,7 +30,7 @@ header > h1 {
 /* -------------------------------- MAIN -------------------------------- */
 
 main {
-  font-family: "Sour Gummy", sans-serif;
+  font-family: "Edu TAS Beginner", cursive;
 
   background-image: url(../img/cork.png);
   background-size: contain;
@@ -51,9 +51,7 @@ main {
   position: relative;
 
   box-shadow: 1px 1px 5px gray;
-  font-style: italic;
-  font-weight: 100;
-  font-size: 0.9rem;
+  font-weight: 400;
 
   margin-bottom: 1rem;
   min-height: 290px;
