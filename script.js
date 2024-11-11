@@ -41,17 +41,15 @@ const fetchCard = async () => {
       const CardEl = document.querySelectorAll(".card");
       const image = document.querySelectorAll(".image-card");
 
-      // aggiungo addEventListener e immagini
+      // aggiungo addEventListener alle immagini
       for (let i = 0; i < CardEl.length; i++) {
         image[i].addEventListener("click", function (e) {
           layoverContainer.classList.remove("d-none");
           document.body.style.overflow = "hidden";
 
           layoverImageContainer.innerHTML = `<img src="${this.src}" alt="" />`;
-        });
 
-        // creo il "Torna ad inizio pagina"
-        image[i].addEventListener("click", function (e) {
+          // creo il "Torna ad inizio pagina"
           window.scrollTo({ top: 0, behavior: "smooth" });
         });
       }
