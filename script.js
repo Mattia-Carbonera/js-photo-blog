@@ -45,6 +45,7 @@ const fetchCard = async () => {
       for (let i = 0; i < CardEl.length; i++) {
         image[i].addEventListener("click", function (e) {
           layoverContainer.classList.remove("d-none");
+          document.body.style.overflow = "hidden";
 
           layoverImageContainer.innerHTML = `<img src="${this.src}" alt="" />`;
         });
@@ -53,6 +54,8 @@ const fetchCard = async () => {
       const buttonLayover = document.getElementById("layover-button-close");
       buttonLayover.addEventListener("click", function () {
         layoverContainer.classList.add("d-none");
+
+        document.body.style.overflow = "auto";
       });
     })
   );
