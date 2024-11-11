@@ -51,6 +51,13 @@ const fetchCard = async () => {
         });
       }
 
+      for (let i = 0; i < CardEl.length; i++) {
+        // creo il "Torna ad inizio pagina"
+        image[i].addEventListener("click", function (e) {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+      }
+
       const buttonLayover = document.getElementById("layover-button-close");
       buttonLayover.addEventListener("click", function () {
         layoverContainer.classList.add("d-none");
