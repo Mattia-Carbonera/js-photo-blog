@@ -49,9 +49,7 @@ const fetchCard = async () => {
 
           layoverImageContainer.innerHTML = `<img src="${this.src}" alt="" />`;
         });
-      }
 
-      for (let i = 0; i < CardEl.length; i++) {
         // creo il "Torna ad inizio pagina"
         image[i].addEventListener("click", function (e) {
           window.scrollTo({ top: 0, behavior: "smooth" });
