@@ -43,7 +43,7 @@ const fetchCard = async () => {
 
       // aggiungo addEventListener alle immagini
       for (let i = 0; i < CardEl.length; i++) {
-        image[i].addEventListener("click", function (e) {
+        image[i].addEventListener("click", function () {
           layoverContainer.classList.remove("d-none");
           document.body.style.overflow = "hidden";
 
